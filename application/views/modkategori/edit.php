@@ -21,7 +21,7 @@
                             <button type="submit" class="btn btn-primary">
                                 <i class="fa fa-save"></i> Save
                             </button> 
-                            <a href="<?= site_url($this->uri->segment(1))?>" title="Kembali">Kembali</a>
+                            <a href="#" onclick="keluar()" title="Kembali">Keluar</a>
                         </td>
                     </tr> 
         		</table>
@@ -30,3 +30,12 @@
         </div>
     </div>
 </div>
+
+<script src="<?php echo base_url() ?>assets/vendor/jquery/jquery.min.js"></script>
+<script type="text/javascript">
+
+    function keluar() {
+        $("#view_data").html('');
+    }
+
+</script>

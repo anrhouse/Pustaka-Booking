@@ -75,21 +75,13 @@ class Kategori extends CI_Controller {
 
 	public function edit(){
 
-		$id = $this->uri->segment(3);
+		$id = $_POST['id'];
 		
 		$data = [
-			'title'		=> $this->menu,
-			'subtitle'	=> 'Edit',
 			'data' 		=> $this->M_kategori->edit($id)
 		];
-
-		$this->load->view($this->template .'head', $data);
-		$this->load->view($this->template .'sidebar', $data);
-		$this->load->view($this->template .'header', $data);
-
-		$this->load->view($this->folder .'edit', $data);
 		
-		$this->load->view($this->template .'footer', $data);
+		$this->load->view($this->folder .'edit', $data);
 
 	}
 
@@ -108,21 +100,13 @@ class Kategori extends CI_Controller {
 
 	public function detail(){
 
-		$id = $this->uri->segment(3);
+		$id = $_POST['id'];
 		
 		$data = [
-			'title'		=> $this->menu,
-			'subtitle'	=> 'Detail',
 			'data' 		=> $this->M_kategori->edit($id)
 		];
 
-		$this->load->view($this->template .'head', $data);
-		$this->load->view($this->template .'sidebar', $data);
-		$this->load->view($this->template .'header', $data);
-
 		$this->load->view($this->folder .'detail', $data);
-		
-		$this->load->view($this->template .'footer', $data);
 
 	}
 
