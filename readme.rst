@@ -1,22 +1,24 @@
 ###################
-What is CodeIgniter
+Tentang Projek Pustaka Booking
 ###################
 
-CodeIgniter is an Application Development Framework - a toolkit - for people
-who build web sites using PHP. Its goal is to enable you to develop projects
-much faster than you could if you were writing code from scratch, by providing
-a rich set of libraries for commonly needed tasks, as well as a simple
-interface and logical structure to access these libraries. CodeIgniter lets
-you creatively focus on your project by minimizing the amount of code needed
-for a given task.
+Projek pustaka booking merupakan file praktikum web programming 2 yg dicustom. pada file ini menggunakan framework Codeigneter 3 dengan tampilan menggunakan Bootstrap admin (startbootstrap-sb-admin-2-master). Projek ini masih dapat dikembangkan sesuai dengan kebutuhan
 
 *******************
-Release Information
+Susunan Projek
 *******************
 
-This repo contains in-development code for future releases. To download the
-latest stable release please visit the `CodeIgniter Downloads
-<https://codeigniter.com/download>`_ page.
+Projek ini terdiri dari : 
+- file database pustaka.sql
+- Halaman login (helper -> islogin_helper)
+- Halaman dashboard
+- Halaman latihan
+- Halaman role
+- Halaman kategori
+- Halaman user
+- Halaman buku
+
+Setiap halaman memiliki koding yang sedikit berbeda, dan pahami mulai dari atas sampai bawah (file database sampai halaman buku). untuk setting pada folder config dapat dilakukan sekaligus maupun sedikit demi sedikit
 
 **************************
 Changelog and New Features
