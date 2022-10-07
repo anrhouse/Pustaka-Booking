@@ -9,16 +9,26 @@ Susunan Projek
 *******************
 
 Projek ini terdiri dari : 
+
 - file database pustaka.sql
+
 - Halaman login (helper -> islogin_helper)
+
 - Halaman dashboard
+
 - Halaman latihan
+
 - Halaman role
+
 - Halaman kategori
+
 - Halaman user
+
 - Halaman buku
 
-Setiap halaman memiliki koding yang sedikit berbeda, dan pahami mulai dari atas sampai bawah (file database sampai halaman buku). untuk setting pada folder config dapat dilakukan sekaligus maupun sedikit demi sedikit
+Setiap halaman memiliki koding yang sedikit berbeda, dan pahami mulai dari atas sampai bawah (file database sampai halaman buku). 
+
+Untuk setting pada folder config dapat dilakukan sekaligus maupun sedikit demi sedikit
 
 **************************
 Changelog and New Features
