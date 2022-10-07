@@ -38,18 +38,10 @@ class Kategori extends CI_Controller {
 	public function add(){
 		
 		$data = [
-			'title'		=> $this->menu,
-			'subtitle'	=> 'Tambah Data',
 			'data' 		=> ''
 		];
 
-		$this->load->view($this->template .'head', $data);
-		$this->load->view($this->template .'sidebar', $data);
-		$this->load->view($this->template .'header', $data);
-
 		$this->load->view($this->folder .'add', $data);
-		
-		$this->load->view($this->template .'footer', $data);
 
 	}
 
@@ -80,7 +72,7 @@ class Kategori extends CI_Controller {
 		$data = [
 			'data' 		=> $this->M_kategori->edit($id)
 		];
-		
+
 		$this->load->view($this->folder .'edit', $data);
 
 	}

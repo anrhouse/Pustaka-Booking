@@ -11,7 +11,7 @@
         <!-- Card Body -->
         <div class="card-body">
                       
-            <a href="<?= site_url($this->uri->segment(1).'/add')?>" class="btn btn-primary" title="Tambah Data"><i class="fas fa-plus"> Tambah Data</i></a>
+            <a href="#" onclick="tambah()" class="btn btn-primary" title="Tambah Data"><i class="fas fa-plus"> Tambah Data</i></a>
             Jumlah Data : <?= $data->num_rows(); ?>
             <hr>
 		<table class="table table-bordered table-hover">
@@ -49,7 +49,7 @@
 			</tbody>
 		</table>
 		<small>
-			Note : Pada bagian lihat detail dan edit menggunakan JQuery Ajax
+			Note : Pada bagian tambah, lihat detail, dan edit menggunakan JQuery Ajax
 		</small>
         </div>
     </div>
@@ -75,6 +75,18 @@
 	        url: '<?php echo site_url('Kategori/edit/')?>'+id,
 	        type: 'POST',
 	        data: 'id='+id,
+	        success: function(a){
+	            $("#view_data").html(a);
+	        }
+	    });
+		
+	}
+
+	function tambah() {
+		$.ajax({
+	        url: '<?php echo site_url('Kategori/add/')?>',
+	        type: 'POST',
+	        data: '',
 	        success: function(a){
 	            $("#view_data").html(a);
 	        }
